@@ -1,0 +1,10 @@
+def hackerCards(lst,budget):
+    cart=[]
+    for i in range(1,budget+1):
+        if budget>=i:
+            if i not in lst:
+                budget-=i
+                cart.append(i)
+        else:
+            break
+    return cart
